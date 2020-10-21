@@ -2,10 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.guren.fastingapp">
 
-
     <application
-        android:fullBackupContent="true"
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -22,9 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".auth.AuthActivity"
+            android:theme="@style/Theme.FastingApp.NoActionBar"/>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.FastingApp.NoActionBar"/>
+            android:theme="@style/Theme.FastingApp.NoActionBar" />
     </application>
 
 </manifest>

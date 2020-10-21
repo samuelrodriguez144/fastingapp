@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
+import com.guren.fastingapp.auth.AuthActivity
 
 class SplashActivity : AppCompatActivity() {
     // Splash screen timer
@@ -23,7 +24,7 @@ class SplashActivity : AppCompatActivity() {
         Handler().postDelayed({
             // This method will be executed once the timer is over
             // Start your app main activity
-            val i = Intent(this@SplashActivity, MainActivity::class.java)
+            val i = Intent(this@SplashActivity, AuthActivity::class.java)
             startActivity(i)
             finish()
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
